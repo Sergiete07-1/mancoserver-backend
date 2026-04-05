@@ -1,4 +1,15 @@
 {
+  "functions": {
+    "API/stripe-create-session.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/stripe-create-session",
+      "dest": "/API/stripe-create-session.js"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
