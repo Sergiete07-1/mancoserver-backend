@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
 
     try {
         const session = await stripe.checkout.sessions.create({
-            payment_method_types: ['card', 'paypal'],
+            payment_method_types: ['card'],
             line_items: items.map(item => ({
                 price_data: {
                     currency: 'eur',
